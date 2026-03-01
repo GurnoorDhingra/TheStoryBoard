@@ -1,4 +1,6 @@
 🎬 AI Storyboard Generator
+
+
 A multi-agent AI pipeline that transforms a short story into a cinematic storyboard. Built with CrewAI, Fireworks AI, and React. Three specialized agents collaborate in sequence to produce a set of consistent, cinematic image generation prompts:
 
 -Director Agent : Analyzes the story and produces a Visual Bible (color palette, character descriptions, lighting style) and a breakdown of 5 key scenes
