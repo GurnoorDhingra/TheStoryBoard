@@ -5,18 +5,18 @@ import os
 load_dotenv()
 FIREWORKS_API_KEY= os.getenv("FIREWORKS_API_KEY")
 director_llm= LLM(
-    model="fireworks_ai/accounts/fireworks/models/gpt-oss-20b",  # needs strongest reasoning
+    model="fireworks_ai/accounts/fireworks/models/gpt-oss-20b",  
     temperature=0.7,
     api_key= FIREWORKS_API_KEY
 )
 prompt_llm= LLM(
-    model="fireworks_ai/accounts/fireworks/models/gpt-oss-20b",    # creative but cheaper
+    model="fireworks_ai/accounts/fireworks/models/gpt-oss-20b",    
     temperature=0.8,
     api_key= FIREWORKS_API_KEY
 )
 continuity_checker_llm = LLM(
-    model="fireworks_ai/accounts/fireworks/models/gpt-oss-20b",   # mostly comparison work
-    temperature=0.3,                                               # lower temp for precision
+    model="fireworks_ai/accounts/fireworks/models/gpt-oss-20b",   
+    temperature=0.3,                                               
     api_key= FIREWORKS_API_KEY
 )
 
